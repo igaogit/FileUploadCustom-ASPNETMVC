@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/Scripts/jquery")
+    @Scripts.Render("~/Scripts/widget")
+    @Scripts.Render("~/Scripts/loadimage")
+    @Scripts.Render("~/Scripts/canvastoblob")
+    @Scripts.Render("~/Scripts/iframetransport")
+    @Scripts.Render("~/Scripts/fileupload")
+    @Scripts.Render("~/Scripts/fileuploadprocess")
+    @Scripts.Render("~/Scripts/fileuploadresize")
+    @Scripts.Render("~/Scripts/fileuploadvalidate")
+    @Scripts.Render("~/Scripts/knob")
+    
+    @RenderSection("PageScripts",true)
+</body>
+</html>
